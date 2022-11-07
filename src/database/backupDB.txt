@@ -1,0 +1,64 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Raphael",
+      "senha": "123",
+      "telefone": "45644-7897",
+      "dtaNascimento": "13/02/1999",
+      "email": "Raphael.morette@foursys.com.br",
+      "rg": "02.000.020-2",
+      "cep": "02074002",
+      "logradouro": "Rua do Imperador",
+      "bairro": "Vila Paiva",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "acesso": "total"
+    },
+    {
+      "id": 2,
+      "nome": "Joao",
+      "senha": "1234",
+      "telefone": "78974-7897",
+      "dtaNascimento": "21/07/1997",
+      "email": "Joao@foursys.com.br",
+      "rg": "21.123.789-1",
+      "cep": "02074002",
+      "logradouro": "Rua do Imperador",
+      "bairro": "Vila Paiva",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "acesso": "restrito"
+    }
+  ],
+  "patrocinio": [
+    {
+      "id": 1,
+      "nome": "Bradesco",
+      "cnpj": "60.746.948/0001-12",
+      "site": "Bradesco.com.br",
+      "quantiaPatrocinio": "1000",
+      "cep": "02074002",
+      "logradouro": "Rua do Imperador",
+      "bairro": "Vila Paiva",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    }
+  ],
+  "indicarBanda": [
+    {
+      "id":1,
+      "nome": "Kings of Leon",
+      "anoLancamento": "2000",
+      "ultimaTurne": "2022"
+    }
+  ],
+  "mural": [
+    {
+      "id":1,
+      "nome": "Raphael",
+      "titulo": "Shows excelentes",
+      "comentario": "The strokes detonou em 2022, melhor show! melhor Festival!"
+    }
+  ]
+}

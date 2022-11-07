@@ -1,0 +1,46 @@
+<div class="text-center">
+  <main class="form-signin m-auto">
+    <form>
+      <img
+        class="mb-4"
+        src="https://assets-global.website-files.com/6164820eb679607415dca969/634423e8057b2b6209ddc2b7_logo-lolla10-p-500.png"
+        alt=""
+        width="72"
+        height="57"
+      />
+      <h1 class="h3 mb-3 fw-normal">Log in</h1>
+      <p [class]="loginInvalido">Usuário ou senha inválido</p>
+
+      <div class="form-floating">
+        <input
+          type="text"
+          name="nome"
+          class="form-control"
+          id="floatingInput"
+          placeholder="Nome"
+          [(ngModel)]="user"
+        />
+        <label for="floatingInput">Nome</label>
+      </div>
+      <div class="form-floating">
+        <input
+          type="password"
+          name="Password"
+          class="form-control"
+          id="floatingPassword"
+          placeholder="Password"
+          [(ngModel)]="password"
+        />
+        <label for="floatingPassword">Senha</label>
+      </div>
+
+      <button class="w-100 btn btn-lg btn-primary" type="submit" (click)="logIn()">Entrar</button>
+      <h1 class="h3 mb-3 mt-3 fw-normal">Ou</h1>
+      <h2 class="h3 mb-3 mt-3 fw-normal">Registre-se</h2>
+      <button class="w-100 btn btn-lg btnRegister btn-primary" routerLink="/user-cadastro" type="submit">
+        Registrar
+      </button>
+      <p class="mt-5 mb-3 text-muted">©Raphael Morette - 2022</p>
+    </form>
+  </main>
+</div>

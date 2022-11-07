@@ -1,0 +1,10 @@
+table.table {
+  text-align: center;
+  margin: 50px 0;
+}
+
+td.acoesBtns {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}

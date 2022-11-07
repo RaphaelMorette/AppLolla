@@ -1,0 +1,225 @@
+<app-header></app-header>
+<div class="main-center">
+  <div class="main-container">
+    <h3 class="fw-light">Novo Usuário</h3>
+    <form [formGroup]="formUsuarios" (ngSubmit)="cadastrar()">
+      <div>
+        <div class="row g-3">
+          <div class="form-floating col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Joaquim"
+              formControlName="nome"
+            />
+            <div
+              *ngIf="formUsuarios.get('nome')?.errors?.['required'] && formUsuarios.get('nome')?.touched"
+            >
+              <small>Campo nome obrigatório</small>
+            </div>
+            <label for="floatingInput">Nome</label>
+          </div>
+
+          <div class="form-floating col-md-6">
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Senha"
+              formControlName="senha"
+            />
+            <div
+              *ngIf="formUsuarios.get('senha')?.errors?.['required'] && formUsuarios.get('senha')?.touched"
+            >
+              <small>Campo senha obrigatório</small>
+            </div>
+            <label for="floatingPassword">Senha</label>
+          </div>
+
+          <div class="form-floating col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="telefone"
+              [textMask]="{ mask: maskTel }"
+              formControlName="telefone"
+            />
+            <div
+              *ngIf="formUsuarios.get('telefone')?.errors?.['required'] && formUsuarios.get('telefone')?.touched"
+            >
+              <small>Campo Telefone obrigatório</small>
+            </div>
+            <label for="floatingPassword">Telefone</label>
+          </div>
+
+          <div class="form-floating col-md-6">
+            <input
+              type="date"
+              class="form-control"
+              placeholder="Data Nascimento"
+              formControlName="dtaNascimento"
+            />
+            <div
+              *ngIf="formUsuarios.get('dtaNascimento')?.errors?.['required'] && formUsuarios.get('dtaNascimento')?.touched"
+            >
+              <small>Campo Data de Nascimento obrigatório</small>
+            </div>
+            <label for="floatingPassword">Data de Nascimento</label>
+          </div>
+
+          <div class="form-floating col-md-6">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="email"
+              formControlName="email"
+            />
+            <div
+              *ngIf="formUsuarios.get('email')?.errors?.['required'] && formUsuarios.get('email')?.touched"
+            >
+              <small>Campo Email obrigatório</small>
+            </div>
+            <label for="floatingPassword">E-mail</label>
+          </div>
+
+          <div class="form-floating col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="rg"
+              [textMask]="{ mask: maskRg }"
+              formControlName="rg"
+            />
+            <div
+              *ngIf="formUsuarios.get('rg')?.errors?.['required'] && formUsuarios.get('rg')?.touched"
+            >
+              <small>Campo RG obrigatório</small>
+            </div>
+            <label for="floatingPassword">RG</label>
+          </div>
+
+          <div class="mb-3 row col-md-6" *ngIf="isTotal">
+            <label>Acesso</label>
+            <div
+              class="btn-group"
+              role="group"
+              aria-label="Basic radio toggle button group"
+            >
+              <input
+                type="radio"
+                class="btn-check"
+                name="btnradio"
+                id="btnradio1"
+                autocomplete="off"
+                value="restrito"
+                checked
+                formControlName="acesso"
+              />
+              <label class="btn btn-outline-primary" for="btnradio1"
+                >Restrito</label
+              >
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="btnradio"
+                id="btnradio2"
+                autocomplete="off"
+                value="total"
+                formControlName="acesso"
+              />
+              <label class="btn btn-outline-primary" for="btnradio2"
+                >Total</label
+              >
+            </div>
+            <div
+              *ngIf="formUsuarios.get('acesso')?.errors?.['required'] && formUsuarios.get('acesso')?.touched"
+            >
+              <small>Campo Acesso obrigatório</small>
+            </div>
+          </div>
+
+          <div class="form-floating col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Senha"
+              [textMask]="{ mask: maskCep }"
+              formControlName="cep"
+              (blur)="buscarCep($event)"
+            />
+            <label for="floatingPassword">CEP</label>
+            <small *ngIf="cepNaoEncontrado" style="color: red"
+              >CEP não encontrado, coloque um CEP válido!</small
+            >
+            <div
+              *ngIf="formUsuarios.get('cep')?.errors?.['required'] && formUsuarios.get('cep')?.touched"
+            >
+              <small> Campo CEP obrigatório </small>
+            </div>
+          </div>
+          <div [class]="mostraEndereco">
+            <div class="row g-3">
+              <div class="form-floating col-md-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Senha"
+                  [disabled]="true"
+                  formControlName="logradouro"
+                />
+                <label for="floatingPassword">Logradouro</label>
+              </div>
+
+              <div class="form-floating col-md-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Senha"
+                  [disabled]="true"
+                  formControlName="bairro"
+                />
+                <label for="floatingPassword">Bairro</label>
+              </div>
+
+              <div class="form-floating col-md-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Senha"
+                  [disabled]="true"
+                  formControlName="cidade"
+                />
+                <label for="floatingPassword">Cidade</label>
+              </div>
+
+              <div class="form-floating col-md-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Senha"
+                  [disabled]="true"
+                  formControlName="estado"
+                />
+                <label for="floatingPassword">Estado</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 btnForms">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              [disabled]="!formUsuarios.valid"
+            >
+              Cadastrar
+            </button>
+            <button type="submit" class="btn btn-dark" routerLink="/user">
+              Voltar
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<app-footer></app-footer>

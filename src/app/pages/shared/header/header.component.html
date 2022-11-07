@@ -1,0 +1,104 @@
+<div class="navigation">
+  <div class="div-block-52 div-block-53">
+    <img
+      src="https://assets-global.website-files.com/6164820eb679607415dca969/62ea737c83543e8c80b3ae15_LOLLA_SITE_RAIO.png"
+      loading="lazy"
+      alt=""
+      class="image-29"
+    />
+  </div>
+  <div class="container w-container">
+    <div class="navbar w-nav">
+      <div class="container-2 w-container">
+        <div class="div-block-14">
+          <a
+            href="/"
+            aria-current="page"
+            class="brand w-nav-brand w--current"
+            aria-label="home"
+            ><img
+              src="https://assets-global.website-files.com/6164820eb679607415dca969/634423e8057b2b6209ddc2b7_logo-lolla10.png"
+              alt="Innings Festival"
+              width="180"
+              srcset="
+                https://assets-global.website-files.com/6164820eb679607415dca969/634423e8057b2b6209ddc2b7_logo-lolla10-p-500.png 500w,
+                https://assets-global.website-files.com/6164820eb679607415dca969/634423e8057b2b6209ddc2b7_logo-lolla10.png       500w
+              "
+              sizes="(max-width: 479px) 100vw, 180px"
+              class="image"
+          /></a>
+          <div class="div-block-15">
+            <div class="text-block-3 logo-dates">
+              24, 25 e 26 de março de 2023&ZeroWidthSpace;
+            </div>
+            <div class="text-block-3 logo-venue">São Paulo</div>
+          </div>
+        </div>
+        <nav role="navigation" class="nav-menu-2 w-nav-menu">
+          <div class="nav-wrapper-2">
+            <a
+              routerLink="/contato"
+              class="nav-link-4 w-nav-link"
+              style="max-width: 940px"
+              >Contato</a
+            >
+            <a
+              routerLink="/indicarBanda"
+              class="nav-link-4 w-nav-link"
+              style="max-width: 940px"
+              >Indicar banda</a
+            >
+            <a
+              routerLink="/mural"
+              class="nav-link-4 w-nav-link"
+              style="max-width: 940px"
+              >Mural</a
+            >
+            <a
+              routerLink="/patrocinio"
+              class="nav-link-4 w-nav-link"
+              style="max-width: 940px"
+              >Patrocínio</a
+            >
+            <a
+              routerLink="/user"
+              class="nav-link-4 w-nav-link"
+              style="max-width: 940px"
+              *ngIf="isTotal"
+              >Usuario</a
+            >
+            <a
+              href="https://lollapalooza.sales.ticketsforfun.com.br/"
+              class="nav-button nav-link w-nav-link"
+              style="max-width: 940px"
+              >Ingressos</a
+            >
+            <a
+              class="nav-button nav-link w-nav-link"
+              style="max-width: 940px"
+              *ngIf="isLogged; else elseBlock"
+              (click)="logout()"
+              >Sair</a
+            >
+            <ng-template #elseBlock>
+              <a
+                routerLink="/login"
+                class="nav-button nav-link w-nav-link"
+                style="max-width: 940px"
+                >Login</a
+              >
+            </ng-template>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="div-block-52">
+    <img
+      src="https://assets-global.website-files.com/6164820eb679607415dca969/62ea7312ba10f5d25ff81f04_LOLLA_SITE_ESTRELA.png"
+      loading="lazy"
+      alt=""
+      class="image-29"
+    />
+  </div>
+</div>

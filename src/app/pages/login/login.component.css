@@ -1,0 +1,32 @@
+.text-center {
+  display: flex;
+  min-height: 41em;
+  position: relative;
+  height: 47em;
+  padding-bottom: 0px;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+main.form-signin {
+  width: 60%;
+  height: 80%;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 32%);
+  background-color: hsla(0, 0%, 100%, 0.93);
+}
+
+img.mb-4 {
+  width: 30%;
+  height: 30%;
+}
+
+.btnRegister {
+  width: 30% !important;
+  background-color: red;
+}
+
+.form-floating {
+  margin: 1em 0;
+}

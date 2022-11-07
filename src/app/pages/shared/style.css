@@ -1,0 +1,40 @@
+small {
+  color: red;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.noShow {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.btnCadastro {
+  margin: 15px;
+}
+
+.main-center {
+  margin: 8% 0 8% 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  padding: 20px;
+  width: 90%;
+  border-radius: 6px;
+  background-color: #eee;
+  box-shadow: 4px 4px 0 0 #000;
+}
+
+.btnForms {
+  display: flex;
+  margin-left: 5px;
+  gap: 1em;
+}

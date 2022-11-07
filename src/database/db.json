@@ -1,0 +1,125 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Raphael",
+      "senha": "123",
+      "telefone": "45644-7897",
+      "dtaNascimento": "13/02/1999",
+      "email": "Raphael.morette@foursys.com.br",
+      "rg": "02.000.020-2",
+      "cep": "02074002",
+      "logradouro": "Rua do Imperador",
+      "bairro": "Vila Paiva",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "acesso": "total"
+    },
+    {
+      "id": 2,
+      "nome": "Joao",
+      "senha": "1234",
+      "telefone": "78974-7897",
+      "dtaNascimento": "21/07/1997",
+      "email": "Joao@foursys.com.br",
+      "rg": "21.123.789-1",
+      "cep": "02074002",
+      "logradouro": "Rua do Imperador",
+      "bairro": "Vila Paiva",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "acesso": "restrito"
+    },
+    {
+      "nome": "Rodolfo",
+      "senha": "12345",
+      "telefone": "(11)98135-6327",
+      "dtaNascimento": "1999-02-13",
+      "email": "raphael@teste.com",
+      "rg": "38.007.480-1",
+      "cep": "02074-002",
+      "logradouro": "Rua do Imperador",
+      "bairro": "Vila Paiva",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "acesso": "restrito",
+      "id": 3
+    },
+    {
+      "nome": "Teste",
+      "senha": "12345",
+      "telefone": "(11)98135-6327",
+      "dtaNascimento": "1999-02-13",
+      "email": "teste@gmail.com",
+      "rg": "00.000.000-0",
+      "cep": "02074-002",
+      "logradouro": "Rua do Imperador",
+      "bairro": "Vila Paiva",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "acesso": "total",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "nome": "TesteID Alterado",
+      "senha": "123456",
+      "telefone": "(00)00000-0000",
+      "dtaNascimento": "1999-02-13",
+      "email": "testeId@teste.com",
+      "rg": "00.000.000-0",
+      "cep": "02074-002",
+      "logradouro": "Rua do Imperador",
+      "bairro": "Vila Paiva",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "acesso": "total"
+    }
+  ],
+  "patrocinio": [
+    {
+      "id": 1,
+      "nome": "Bradesco",
+      "cnpj": "60.746.948/0001-12",
+      "site": "Bradesco.com.br",
+      "quantiaPatrocinio": "1000",
+      "cep": "02074002",
+      "logradouro": "Rua do Imperador",
+      "bairro": "Vila Paiva",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    {
+      "id": 2,
+      "nome": "Banco Next",
+      "cnpj": "0010010012020",
+      "site": "next.com.br",
+      "quantiaPatrocinio": 50000,
+      "cep": "02074002",
+      "logradouro": "Rua do Imperador",
+      "bairro": "Vila Paiva",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    }
+  ],
+  "indicarBanda": [
+    {
+      "id": 1,
+      "nome": "Kings of Leon",
+      "anoLancamento": "2000",
+      "ultimaTurne": "2022"
+    }
+  ],
+  "mural": [
+    {
+      "id": 1,
+      "titulo": "Shows excelentes",
+      "comentario": "The strokes detonou em 2022, melhor show! melhor Festival!"
+    },
+    {
+      "id": 2,
+      "titulo": "Melhor festival!",
+      "comentario": "Muita Comida gostosa, otimo lugar!"
+    }
+  ]
+}
